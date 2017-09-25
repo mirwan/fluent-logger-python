@@ -1,0 +1,33 @@
+Source: fluent-logger
+Section: python
+Priority: optional
+Maintainer: Kazuki Ohta <kazuki.ohta@gmail.com>
+Uploaders: Kazuki Ohta <kazuki.ohta@gmail.com>
+Build-Depends:
+ debhelper (>= 9),
+ dh-python,
+ python-all (>= 2.7),
+ python-pyldap,
+ python-setuptools,
+ python3-all (>= 3.4),
+ python3-setuptools,
+X-Python-Version: >= 2.7
+X-Python3-Version: >= 3.4
+Standards-Version: 3.9.8
+Homepage: https://pypi.python.org/pypi/fluent-logger
+Vcs-Git: https://github.com/fluent/fluent-logger-python.git
+Vcs-Browser: https://github.com/fluent/fluent-logger-python
+
+Package: python-fluent-logger
+Architecture: all
+Depends:
+ ${misc:Depends},
+ ${python:Depends}
+Description: A structured logger for Fluentd (Python) http://fluentd.org/
+
+Package: python3-fluent-logger
+Architecture: all
+Depends:
+ ${misc:Depends},
+ ${python3:Depends}
+Description: A structured logger for Fluentd (Python) http://fluentd.org/
